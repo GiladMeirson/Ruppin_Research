@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackOverflow Q&A Selector</title>
+   
+     <!-- Include jQuery only once -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- Include jQuery UI -->
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ 
+     <!-- Other scripts and stylesheets -->
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+     <link rel="stylesheet" href="/style.css">
+     <script src="/Data.js"></script>
+</head>
+<body>
+    <header>
+        <h1>StackOverflow Q&A Selector</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Send Questions</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Analysis</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="actions">
+                <div class="select-model">
+                    <select id="model-select">
+                        <option value="">Select a model</option>
+                        <option value="gemini-1.5">Gemini 1.5</option>
+                        <option value="claude-3.5">Claude 3.5</option>
+                        <option value="gpt-4">GPT-4</option>
+                        <option value="gpt-4o">GPT-4O</option>
+                    </select>
+                </div>
+                <button class="send-button">Send Selected Questions</button>
+            </div>
+            <div class="table-container">
+                <table id="question-table" class="display">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="select-all-checkbox"></th>
+                            <th>Question ID</th>
+                            <th>Title</th>
+                            <th>Creation Date</th>
+                            <th>Score</th>
+                            <th>View Count</th>
+                            <th>Answer Count</th>
+                            <th>Tags</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
