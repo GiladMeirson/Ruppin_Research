@@ -2,10 +2,10 @@ import sql from 'mssql';
 //igroup193_35344	igroup193
 // Configuration object
 const config = {
-    user: 'igroup193', // replace with your database username
-    password: 'igroup193_35344', // replace with your database password
-    server: 'media.ruppin.ac.il', // replace with your server name or IP address
-    database: 'igroup193_test2', // replace with your database name
+    user: '*****************', // replace with your database username
+    password: ''*****************',', // replace with your database password
+    server: ''*****************',', // replace with your server name or IP address
+    database: ''*****************',', // replace with your database name
     options: {
         encrypt: true, // Use encryption if required
         trustServerCertificate: true // Change to true for local dev / self-signed certs
